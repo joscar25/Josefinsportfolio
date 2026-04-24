@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+}
+
+.icons {
+  gap: 70px;
+}
+.my-grid {
+  display: grid;
+  padding: 48px;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  div {
+    background-color: hsl(276, 100%, 87%);
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    word-break: break-all;
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+}
+
+@media (min-width: 700px) {
+  .my-grid {
+    width: 250px;
+    height: auto;
+  }
+  .icons {
+    justify-content: space-between;
+    justify-content: center;
+  }
+  .projekt.kort {
+    justify-content: flex-end;
+  }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(276, 100%, 87%);
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+.card:hover {
+  background-color: hsl(275, 88%, 67%);
+}
