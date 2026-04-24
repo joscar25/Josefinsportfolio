@@ -1,0 +1,51 @@
+body {
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(276, 100%, 87%);
+  border-radius: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+.card:hover {
+  background-color: hsl(275, 88%, 67%);
+}
+.my-grid {
+  height: 50svh;
+  display: grid;
+  padding: 48px;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  div {
+    background-color: hsl(276, 100%, 87%);
+    border-radius: 10px;
+    font-size: 30px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.icons {
+  gap: 70px;
+}
+@media (min-width: 700px) {
+  .my-grid {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  .icons {
+    justify-content: space-between;
+    justify-content: center;
+  }
+}
